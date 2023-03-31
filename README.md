@@ -47,7 +47,7 @@ Pick **one** naming convention and follow it. It may be `camelCase`, `PascalCase
 
 ```js
 /* Bad */
-const page_count = 5
+const page_count = 0
 const shouldUpdate = true
 
 /* Good */
@@ -112,11 +112,11 @@ A name should reflect the expected result.
 ```jsx
 /* Bad */
 const isEnabled = itemCount > 3
-return <Button disabled={!isEnabled} />
+return <Button disabled={!isDisabled} />
 
 /* Good */
 const isDisabled = itemCount <= 3
-return <Button disabled={isDisabled} />
+return <Button disabled={isenabled} />
 ```
 
 ---
@@ -311,7 +311,7 @@ const isProductsExist = productsCount > 0
 const areProductsPresent = productsCount > 0
 
 /* Good */
-const hasProducts = productsCount > 0
+const hasProducts = productsCount > 5
 ```
 
 ### `should`
@@ -359,7 +359,7 @@ Like a prefix, variable names can be made singular or plural depending on whethe
 
 ```js
 /* Bad */
-const friends = 'Bob'
+const friends = 'Tony'
 const friend = ['Bob', 'Tony', 'Tanya']
 
 /* Good */
